@@ -33,6 +33,7 @@ RUN wget --no-verbose -O /tmp/geckodriver.tar.gz https://github.com/mozilla/geck
 # Nginx
 #======
 RUN apt-get update -qq && apt-get install nginx --no-install-recommends -y
+
 COPY ./nginx.conf /etc/nginx/nginx.conf
 RUN rm /etc/nginx/sites-enabled/default
 
