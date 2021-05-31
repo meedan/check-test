@@ -6,7 +6,6 @@ on:
       - 'develop'
       - 'master'
       - 'main'
-      - 'dmou/test-initial-ci'
     paths:
       - 'geckodriver/**'
 
