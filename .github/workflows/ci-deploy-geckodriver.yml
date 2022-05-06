@@ -56,7 +56,7 @@ jobs:
           ${{ runner.os }}-buildx-
 
     - name: Build and push
-      uses: docker/build-push-action@v2
+      uses: docker/build-push-action@v3
       with:
         context: ./${{ env.CHECK_TEST_IMAGE }}
         file: ./${{ env.CHECK_TEST_IMAGE }}/Dockerfile
